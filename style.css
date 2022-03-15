@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px rgb(89,86,255,0.72);
+    margin: 20px auto;
+}
+
+.form{
+    background-color: rgb(159 189 186);
+    border: 3px solid black;
+    border-radius: 9px;
+    box-shadow:  10px 10px 10px ;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    padding: 20px 60px 20px 0px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form th{
+    float: right;
+    text-align: center;
+}
+
+.form td input,select{
+    width: 100%;
+    margin: 0 5px;
+}
+
+#btn{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    background-color: #400909;
+    color: white;
+    border: 3px solid #cfc909;
+    border-radius: 7px;
+    font-size: 21px;
+    margin-left: 142%;
+    text-transform: capitalize;
+}
+
+body{
+    background: linear-gradient(200deg, rgba(241,141,158) 0%, rgb(168,250,113) 100%);
+}
+
+.view{
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1px;
+    align-items: center;
+    border: 2px solid black;
+    width: fit-content;
+    text-decoration: bold,black;
+}
+
+#head{
+    display: block;
+    margin: 10px;
+    justify-content: center;
+}
+
+#head th{
+    list-style: none;
+    color:#55e909;
+    width: 32vh;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 11px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg,rgba(3,3,3) 0%, rgb(3,3,3) 100%);
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="form">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name: </th>
+                    <td><input type="text" name="name" id="name" placeholder="Enter Your Full Name" required</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Contact No: </th>
+                    <td><input type="number" name="phone" id="phone" placeholder="Enter Your Phone No" required</td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Your Email" required</td>
+                </tr>
+                <tr>
+                    <th>State: </th>
+                    <td><input type="text" name="state" id="state" placeholder="Enter State" required</td>
+                </tr>
+                <tr>
+                    <th>City: </th>
+                    <td><input type="text" name="city" id="city" placeholder="Enter City" required</td>
+                </tr>
+                <tr>
+                    <th>Gender: </th>
+                    <td><select id="gen" name="gen" required>
+                            <option selected="" value="Default">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course: </th>
+                    <td><select id="course" name="course" required>
+                            <option selected="" value="Default">Select</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="BE">BE</option>
+                            <option value="BTECH">B.TECH</option>
+                            <option value="MTECH">M.TECH</option>
+                            <option value="BCOM">B.COM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="button" id="btn" value="Register" onclick="AddStudent()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Students Enrolled</h1>
+    <table id="view">
+        <thead id="head">
+            <tr>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Email</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Gender</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
